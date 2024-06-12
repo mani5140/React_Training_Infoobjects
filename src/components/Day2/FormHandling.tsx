@@ -1,8 +1,8 @@
 import { useState } from "react"
 
 export const FormHandling = () => {
-    const [name, setName] = useState('');
-    const [city,setCity] = useState('');
+    const [name, setName] = useState<string>('');
+    const [city,setCity] = useState<string>('');
 
     const handleSubmit = () => {
         alert(`My name is ${name}, i belongs to ${city}`)

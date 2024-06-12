@@ -1,4 +1,3 @@
-import React from 'react'
 
 export const EventBubbling = () => {
     function handleClick(message: string) {
@@ -16,14 +15,11 @@ export const EventBubbling = () => {
     return (
         <div>
             <div onClick={(e) => handleClick("Parent event is called...")}
-                style={{ backgroundColor: "lightblue", padding: "5px"}}>
+                style={{ backgroundColor: "lightblue", padding: "5px" }}>
                 <h1>this is parent component</h1>
-                <p>we can stop EventBubbling by useing stopPropagation() method</p>
+                <p>we can stop EventBubbling by using stopPropagation() method</p>
                 <Child />
             </div>
-
-
-
         </div>
     )
 }

@@ -1,11 +1,11 @@
-export type UserInterface = {
+export type IUser = {
     name: string;
     age: number;
     src: string;
     details: string[];
 };
 
-export const usersData: UserInterface[] = [
+export const usersData: IUser[] = [
     {
         name: 'mani',
         age: 22,
